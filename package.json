@@ -1,0 +1,51 @@
+{
+  "name": "ahj_5",
+  "version": "1.0.0",
+  "test": {
+    "testEnvironment": "node",
+    "testTimeout": 90000
+  },
+  "description": "popover",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production",
+    "lint": "eslint .",
+    "test": "jest --passWithNoTests --testPathPattern=./src/",
+    "coverage": "jest --testPathPattern=./src/ --coverage",
+    "e2e": "jest --testPathPattern=./e2e/ --runInBand",
+    "preshow:coverage": "npm run coverage",
+    "show:coverage": "live-server coverage/lcov-report",
+    "preshow:dist": "npm run build",
+    "show:dist": "live-server dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/InnaAlieva/ahj-5.git"
+  },
+  "author": "InnaAlieva",
+  "license": "ISC",
+  "homepage": "",
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^27.5.1",
+    "babel-loader": "^8.4.1",
+    "css-loader": "^6.11.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.31.0",
+    "html-loader": "^3.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "jest": "^25.5.4",
+    "mini-css-extract-plugin": "^2.4.5",
+    "puppeteer": "^13.7.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.15.2"
+  },
+  "dependencies": {
+    "core-js": "^3.39.0"
+  }
+}
